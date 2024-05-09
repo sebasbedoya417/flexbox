@@ -1,0 +1,137 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+html{
+    background-color: coral;
+    margin-right: 50px;
+    margin-left: 50px;  
+}
+header{
+    display: flex;
+     min-height: 70px;
+    background-color: coral;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    border: solid 2px;
+    padding: 10px;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+
+}
+nav a{
+    font-weight: 600;
+    padding-right: 70px;
+}
+nav a:hover{
+    color: black;
+}
+
+@media (max-width:700px){
+    header{
+    flex-direction: column;
+}
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside{
+    background-color: aqua;
+    flex: 30;
+    padding: 15%;
+
+}
+.aside img{
+    width: 90%;
+}
+
+.section{
+    background-color: rgb(182, 47, 255);
+    flex: 70%;
+    padding: 10%;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+video{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tarjetas .card{
+    background:linear-gradient(pink,green,white);
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 30px;
+    padding: 10px;
+    padding-bottom: 120px;
+    overflow: auto;
+    border:  solid 2px black;
+    aspect-ratio: ratio 700px/800px;
+
+}
+
+.tarjetas .card .contenido img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+.tarjetas .card .contenido .centrar{
+    text-align: center;
+    font-weight:bold ;
+    font-size: 1.3rem;
+    border-bottom: 2px solid yellow;
+}
+
+.cuadro{
+    display: flex;
+    background:radial-gradient(khaki,violet,rgb(88, 53, 216));
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro .imagen{
+    flex: 33%;
+}
+
+.cuadro .imagen img{
+    width: 60%;
+}
+
+.cuadro .texto{
+    flex: 66%;
+}
+
+
